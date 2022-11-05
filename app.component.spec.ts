@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'ReactiveFormExample'`, () => {
+  it(`should have as title 'HooksExample'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('ReactiveFormExample');
+    expect(app.title).toEqual('HooksExample');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('ReactiveFormExample app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('HooksExample app is running!');
   });
 });
